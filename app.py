@@ -9,5 +9,5 @@ def index():
 
 @app.route("/welcome", methods=["POST"])
 def welcome():
-    name = request.args.get("username", "World")
-    return render_template("welcome.html", name=name)
+    username = request.args.get("username", "World")
+    return render_template("welcome.html", name=username)
